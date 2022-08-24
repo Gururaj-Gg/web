@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10A</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            var ml=$("textarea").attr('maxlength');
+            $("span").text(ml);
+           $("textarea").keyup(function(){
+            var nc = $(this).val().length
+             $("#rmchr").text(ml-nc);
+           });
+                    $("[type='checkbox']").click(function(){
+                       if($(this).is(':checked'))
+                       $("[type='button']").removeAttr('disabled');
+                       else
+                       $("[type='button']").attr('disabled','disabled');
+                    });
+        });
+        
+    </script>
+</head>
+<body bgcolor="yellow">
+    <center>
+    <form>
+        <h1>10 A & B</h1>
+        <input type="checkbox"> I Agree The Conditions
+       <input type="button" value="I Agree" disabled style="color: blue;"> 
+        <h3>You can enter maximum of <span>20</span> characters</h3>
+       <textarea name="txt" id="text" rows="10" cols="30" maxlength="30"></textarea>
+       <p>Remaining characters are:<span id="rmchr">20</span></p>
+    </form>
+</center>
+    
+</body>
+</html>
