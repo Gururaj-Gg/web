@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Example</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        /*$(document).ready(function(){
+            $("p").click(function(){    //another method
+                 $(this).hide();
+               });    
+      
+        });*/
+        $(function(){
+            $("p").click(function(){
+                 $(this).hide();
+               }); 
+               $("h1").mouseover(function(){
+                 $(this).hide();
+               }); 
+        });
+    
+    </script>
+</head>
+<body>
+    <h1>welcome</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur quod sit sint in modi nulla cupiditate ratione vel quae repellendus incidunt nobis ullam architecto, voluptate quam sunt aut quibusdam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aspernatur in iure odit modi nisi cupiditate, voluptatem laboriosam consequatur eligendi doloribus. Amet corrupti aspernatur ducimus voluptatum enim dolorum porro reprehenderit.</p>
+    <h1>hello</h1>
+</body>
+</html>
